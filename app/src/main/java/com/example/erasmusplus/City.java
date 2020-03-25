@@ -1,12 +1,17 @@
 package com.example.erasmusplus;
 
 import android.media.Image;
+import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-public class City {
+public class City extends AppCompatActivity {
+
+
+
     private CardView view;
     private ImageView image;
     private TextView title;

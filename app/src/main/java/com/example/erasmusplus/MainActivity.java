@@ -2,7 +2,6 @@ package com.example.erasmusplus;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
@@ -10,6 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.navigation.ui.NavigationUI;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.NavController;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +22,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //NavController navController;
+        //AppBarConfiguration appBarConfiguration =
+        //        new AppBarConfiguration.Builder(navController.getGraph()).build();
+
+        //set up Toolbar
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+        getSupportActionBar().setTitle("Cities"); // Titel der Actionbar festlegen
+
 
         CardView cardMgh = findViewById(R.id.firstcard);
         CardView cardBorgo = findViewById(R.id.secondcard);
