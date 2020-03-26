@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Cities"); // Titel der Actionbar festlegen
 
 
+        // Card Views erstellen
         CardView cardMgh = findViewById(R.id.firstcard);
         CardView cardBorgo = findViewById(R.id.secondcard);
         CardView cardOdry = findViewById(R.id.thirdcard);
