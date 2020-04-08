@@ -21,7 +21,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+    <fragment
+        android:id="@+id/my_nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
 
+
+
+<!--
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -168,5 +182,6 @@
 
 
         </LinearLayout>
-    </ScrollView>
+    </ScrollView>-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

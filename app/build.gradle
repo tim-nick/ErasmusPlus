@@ -30,9 +30,25 @@ dependencies {
     implementation "androidx.navigation:navigation-ui:2.2.1"
     implementation "androidx.navigation:navigation-dynamic-features-fragment:2.3.0-alpha04"
 
+    // Dynamic Feature Module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:2.2.1"
+
+    // Testing Navigation
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation "androidx.navigation:navigation-testing:2.3.0-alpha04"
+
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'androidx.cardview:cardview:1.0.0'
+
+    //Navigation
+
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha04'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0-alpha04'
+
+    apply plugin: 'androidx.navigation.safeargs'
+
+
 }

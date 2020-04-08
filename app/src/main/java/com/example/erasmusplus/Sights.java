@@ -18,7 +18,7 @@ public class Sights extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sights);
 
-
+// Toolbar
         Toolbar myToolbar2 = (Toolbar) findViewById(R.id.my_toolbar2);
         setSupportActionBar(myToolbar2);
         myToolbar2.setNavigationOnClickListener(new View.OnClickListener() {

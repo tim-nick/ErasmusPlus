@@ -10,12 +10,19 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.NavHost;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.NavController;
 
 
 public class MainActivity extends AppCompatActivity {
+
+
+
 
 
     @Override
@@ -32,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
         getSupportActionBar().setTitle("Cities"); // Titel der Actionbar festlegen
 
+        //NavController navController = NavHostFragment.findNavController(R.layout.activity_main);
+
+        /*
 
         // Card Views erstellen
         CardView cardMgh = findViewById(R.id.firstcard);
@@ -43,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView mghImg = findViewById(R.id.imageView1);
         ImageView bgoImg = findViewById(R.id.imageView2);
         ImageView OdrImg = findViewById(R.id.imageView3);
+
 
         TextView mghTitle = findViewById(R.id.title1);
         TextView bgoTitle = findViewById(R.id.title2);
@@ -63,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        */
+
+
+
 
 
     }
@@ -71,5 +86,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Sights.class);
         startActivity(intent);
     }
+
+
 }
 
