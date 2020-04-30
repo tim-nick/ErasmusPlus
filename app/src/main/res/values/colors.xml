@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="mainColor">#FF0000</color>
     <color name="rolladen">#000000</color>
+    <color name="background">#fafafa</color>
 </resources>

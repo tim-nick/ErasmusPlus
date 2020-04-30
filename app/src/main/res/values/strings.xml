@@ -1,6 +1,33 @@
 <resources>
     <string name="app_name">ErasmusPlus</string>
-    <string name="title_CitiesOverview">Cities</string>
-    <string name="title_Sights">Sights</string>
+
+    <string name="title_Cities_main">Cities</string>
+    <string name="title_Cities_CardOne">Borgomanero</string>
+    <string name="text_Cities_CardOne">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+
+    <string name="title_Cities_CardTwo">Odry</string>
+    <string name="text_Cities_CardTwo">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+
+    <string name="title_Cities_CardThree">Bad Mergentheim</string>
+    <string name="text_Cities_CardThree">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
+
+
+
+    <string name="title_Sights_main">Sights</string>
+    <!--Bad Mergentheim-->
+    <string name="title_Sights_cardOne">Schloss</string>
+    <string name="title_Sights_cardTwo">Tierpark</string>
+    <string name="title_Sights_cardThree">Zwillingshäuser</string>
+    <string name="title_Sights_cardFour">Kurpark</string>
+
+    <string name="category_Sights_One">Building</string>
+    <string name="category_Sights_Two">Parks and Nature</string>
+
+    <string name="category_Sights_Three"></string>
+    <string name="category_SightsFour"></string>
+
+
+
+
 
 </resources>

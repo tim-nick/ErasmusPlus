@@ -1,5 +1,6 @@
 package com.example.erasmusplus;
 
+import android.location.LocationListener;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,8 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleEventObserver;
 
 
 
@@ -37,19 +40,47 @@ public class first_navigation extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
+        //getLifecycle().addObserver(new FragmentLifecycleObserver());
+
+
+
         final Bundle bundle = new Bundle();
         bundle.putBoolean("test_boolean", true);
 
+
+
         final NavController navController = Navigation.findNavController(getActivity(), R.id.my_nav_host_fragment);
 
+        final Button firstButton = view.findViewById(R.id.buttonfirstcard);
 
-        Button button = view.findViewById(R.id.buttonfirstcard);
-
-        button.setOnClickListener(new View.OnClickListener() {
+        firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_first_navigation_to_second_navigation, bundle);
+                System.out.println("Button function triggered!!!");
             }
         });
+
+        Button secondButton = view.findViewById(R.id.buttonsecondcard);
+
+        secondButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_first_navigation_to_second_navigation);
+
+            }
+        });
+
+        Button thirdButton = view.findViewById(R.id.buttonthirdcard);
+
+        thirdButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_first_navigation_to_second_navigation);
+            }
+        });
+
+
+
     }
 }
