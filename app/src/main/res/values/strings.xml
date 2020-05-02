@@ -12,7 +12,6 @@
     <string name="text_Cities_CardThree">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</string>
 
 
-
     <string name="title_Sights_main">Sights</string>
     <!--Bad Mergentheim-->
     <string name="title_Sights_cardOne">Schloss</string>
@@ -26,8 +25,14 @@
     <string name="category_Sights_Three"></string>
     <string name="category_SightsFour"></string>
 
+    <string name="add_Title">Title</string>
+    <string name="add_Category">Category</string>
+    <string name="add_Location">Location</string>
+    <string name="add_Description">Description</string>
+    <string name="add_Button">ADD</string>
 
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

@@ -41,6 +41,67 @@ public class second_navigation extends Fragment  {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        final NavController navController = Navigation.findNavController(getActivity(), R.id.my_nav_host_fragment);
+
+
+        final Button addButton = view.findViewById(R.id.addButton);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_second_navigation_to_third_navigation);
+            }
+        });
+
+        final Button buttonSightsFirstCard = view.findViewById(R.id.sightButtonFirstCard);
+        buttonSightsFirstCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_second_navigation_to_fourth_navigation);
+            }
+        });
+
+        final Button buttonSightsSecondCard = view.findViewById(R.id.sightbuttonSecondCard);
+        buttonSightsSecondCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_second_navigation_to_fourth_navigation);
+            }
+        });
+
+        final Button buttonSightsThirdCard = view.findViewById(R.id.sightbuttonThirdCard);
+        buttonSightsThirdCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_second_navigation_to_fourth_navigation);
+            }
+        });
+
+        final Button buttonSightsFourthCard = view.findViewById(R.id.sightbuttonFourthCard);
+        buttonSightsFourthCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_second_navigation_to_fourth_navigation);
+            }
+        });
+
+        final Button buttonSightsFifthCard = view.findViewById(R.id.sightbuttonFifthCard);
+        buttonSightsFifthCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_second_navigation_to_fourth_navigation);
+            }
+        });
+
+        final Button buttonSightsSixthCard = view.findViewById(R.id.sightbuttonSixthCard);
+        buttonSightsSixthCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_second_navigation_to_fourth_navigation);
+            }
+        });
+
+
+
 
     }
 }

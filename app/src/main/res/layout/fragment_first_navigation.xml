@@ -69,8 +69,8 @@
 
                 <Button
                     android:id="@+id/buttonfirstcard"
-                    android:layout_width="375dp"
-                    android:layout_height="375dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:alpha="0.0" />
 
 
@@ -120,8 +120,8 @@
 
                 <Button
                     android:id="@+id/buttonsecondcard"
-                    android:layout_width="375dp"
-                    android:layout_height="375dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:alpha="0.0" />
             </androidx.cardview.widget.CardView>
 
@@ -168,8 +168,8 @@
 
                 <Button
                     android:id="@+id/buttonthirdcard"
-                    android:layout_width="375dp"
-                    android:layout_height="375dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:alpha="0.0" />
             </androidx.cardview.widget.CardView>
 

@@ -3,29 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@android:color/background_light">
 
 
+<!--https://medium.com/@ali.muzaffar/understanding-vectordrawable-pathdata-commands-in-android-d56a6054610e-->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/addbutton"/>
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/background_light"
         app:layout_constraintTop_toTopOf="parent">
 
         <GridLayout
             android:id="@+id/sightsGird"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:background="@android:color/holo_blue_light"
+            android:background="@android:color/background_light"
             android:columnCount="2"
             android:columnOrderPreserved="false"
+            android:layout_gravity="center_horizontal"
             android:orientation="vertical"
             android:rowCount="3">
 
@@ -35,8 +49,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="230dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
                 app:cardBackgroundColor="@android:color/darker_gray"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:layout_marginEnd="7dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -69,15 +86,22 @@
 
                 </LinearLayout>
 
+                <Button
+                    android:id="@+id/sightButtonFirstCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.0"/>
+
 
             </androidx.cardview.widget.CardView>
-
 
             <!--Spalte 1-->
             <!--Karte 2-->
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="230dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
                 app:cardBackgroundColor="@android:color/holo_green_dark"
                 app:cardElevation="8dp">
 
@@ -112,6 +136,12 @@
 
                 </LinearLayout>
 
+                <Button
+                    android:id="@+id/sightbuttonSecondCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.0"/>
+
 
             </androidx.cardview.widget.CardView>
 
@@ -121,6 +151,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="230dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
                 app:cardBackgroundColor="@android:color/holo_green_dark"
                 app:cardElevation="8dp">
 
@@ -155,7 +187,11 @@
 
                 </LinearLayout>
 
-
+                <Button
+                    android:id="@+id/sightbuttonThirdCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.0"/>
             </androidx.cardview.widget.CardView>
 
 
@@ -164,6 +200,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="230dp"
+                android:layout_marginBottom="7dp"
                 app:cardBackgroundColor="@android:color/darker_gray"
                 app:cardElevation="8dp">
 
@@ -198,6 +235,12 @@
 
                 </LinearLayout>
 
+                <Button
+                    android:id="@+id/sightbuttonFourthCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.0"/>
+
 
             </androidx.cardview.widget.CardView>
 
@@ -207,6 +250,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="230dp"
+                android:layout_marginBottom="7dp"
                 app:cardBackgroundColor="@android:color/darker_gray"
                 app:cardElevation="8dp">
 
@@ -242,6 +286,11 @@
 
                 </LinearLayout>
 
+                <Button
+                    android:id="@+id/sightbuttonFifthCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.0"/>
 
             </androidx.cardview.widget.CardView>
 
@@ -251,6 +300,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="230dp"
+                android:layout_marginBottom="7dp"
                 app:cardBackgroundColor="@android:color/darker_gray"
                 app:cardElevation="8dp">
 
@@ -285,6 +335,11 @@
 
                 </LinearLayout>
 
+                <Button
+                    android:id="@+id/sightbuttonSixthCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.0"/>
 
             </androidx.cardview.widget.CardView>
 
