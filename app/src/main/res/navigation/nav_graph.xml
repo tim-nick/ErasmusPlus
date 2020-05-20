@@ -32,7 +32,11 @@
         android:id="@+id/third_navigation"
         android:name="com.example.erasmusplus.third_navigation"
         android:label="fragment_third_navigation"
-        tools:layout="@layout/fragment_third_navigation" />
+        tools:layout="@layout/fragment_third_navigation" >
+        <action
+            android:id="@+id/action_third_navigation_to_second_navigation"
+            app:destination="@id/second_navigation" />
+    </fragment>
 
     <fragment
         android:id="@+id/fourth_navigation"
