@@ -31,6 +31,19 @@
     <string name="add_Description">Description</string>
     <string name="add_Button">ADD</string>
 
+
+    <string name="requestSent">Request Sent!</string>
+    <string name="requestSentText">Your Request is going to be checked and you will be informed.</string>
+    <string name="gotIt">GOT IT</string>
+
+    <string name="requestSentFailed">Failed to sent request!</string>
+    <string name="requestSentFailedImage">Take a photo!</string>
+    <string name="requestSentFailedTextTitle">Fill out the Title</string>
+    <string name="requestSentFailedTextCategory">Fill out the Category</string>
+    <string name="requestSentfailedTextLocation">Fill out the Location</string>
+    <string name="requestSentfailedTextDescription">Fill out the Description</string>
+    <string name="unexpectederror">Unexpected error</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

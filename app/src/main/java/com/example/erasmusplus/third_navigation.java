@@ -13,6 +13,7 @@ import androidx.navigation.Navigation;
 
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,6 +38,7 @@ import java.util.Locale;
  */
 public class third_navigation extends Fragment {
 
+    public static int feedback;
     static final int REQUEST_IMAGE_CAPTURE = 1;
     private static final int RESULT_OK = -1 ;
     String currentPhotoPath;
@@ -106,8 +110,17 @@ public class third_navigation extends Fragment {
             @Override
             public void onClick(View v) {
                 // Collect all data input
-                collectInputData(inputImage, titleTextView, categoryTextView, locationTextView, descriptionTextView);
-                navController.navigate(R.id.action_third_navigation_to_second_navigation);
+                feedback = collectInputData(inputImage, titleTextView, categoryTextView, locationTextView, descriptionTextView);
+                System.out.println(feedback);
+                KeyboardUtils keyboard = new KeyboardUtils();
+                if (feedback == 0) {
+                    navController.navigate(R.id.action_third_navigation_to_sentRequestFragment);
+                    keyboard.hideKeyboard( getActivity());
+                } else {
+                    navController.navigate(R.id.action_third_navigation_to_sentRequestFailedFragment);
+                    keyboard.hideKeyboard( getActivity());
+                }
+
             }
         });
 
@@ -228,14 +241,38 @@ public class third_navigation extends Fragment {
         System.out.println("Uri wurde gesetzt = URi ist leer");
     }
 
-    public void collectInputData(ImageView picture, TextView title, TextView category, TextView location, TextView description) {
+    public int collectInputData(ImageView picture, TextView title, TextView category, TextView location, TextView description) {
         CharSequence titleValue = title.getText();
         CharSequence categoryValue = category.getText();
         CharSequence locationValue = location.getText();
         CharSequence descriptionValue = description.getText();
 
+
+        int errorCase;
+        int[] errors = {1, 2, 3, 4, 5};
+
+
+        // Image Abfrage fehlt noch
+        if (TextUtils.isEmpty(titleValue)) {
+            errorCase = errors[1];
+        } else if (TextUtils.isEmpty(categoryValue)) {
+            errorCase = errors[2];
+        } else if (TextUtils.isEmpty(locationValue)) {
+            errorCase = errors[3];
+        } else if (TextUtils.isEmpty(descriptionValue)) {
+            errorCase = errors[4];
+        } else {
+            errorCase = 0;
+        }
+
+
+
         System.out.println(titleValue + " <- Title " + categoryValue + "<- category " + locationValue + " <- location" + descriptionValue + "<-description");
 
+
+
+
+        return errorCase;
     }
 }
 

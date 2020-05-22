@@ -34,8 +34,11 @@
         android:label="fragment_third_navigation"
         tools:layout="@layout/fragment_third_navigation" >
         <action
-            android:id="@+id/action_third_navigation_to_second_navigation"
-            app:destination="@id/second_navigation" />
+            android:id="@+id/action_third_navigation_to_sentRequestFragment"
+            app:destination="@id/sentRequestFragment" />
+        <action
+            android:id="@+id/action_third_navigation_to_sentRequestFailedFragment"
+            app:destination="@id/sentRequestFailedFragment" />
     </fragment>
 
     <fragment
@@ -43,6 +46,22 @@
         android:name="com.example.erasmusplus.fourth_navigation"
         android:label="fragment_fourth_navigation"
         tools:layout="@layout/fragment_fourth_navigation" />
+    <dialog
+        android:id="@+id/sentRequestFragment"
+        android:name="com.example.erasmusplus.SentRequestFragment"
+        android:label="SentRequestFragment" >
+        <action
+            android:id="@+id/action_sentRequestFragment_to_second_navigation"
+            app:destination="@id/second_navigation" />
+    </dialog>
+    <dialog
+        android:id="@+id/sentRequestFailedFragment"
+        android:name="com.example.erasmusplus.SentRequestFailedFragment"
+        android:label="SentRequestFailedFragment" >
+        <action
+            android:id="@+id/action_sentRequestFailedFragment_to_second_navigation"
+            app:destination="@id/second_navigation" />
+    </dialog>
 
 
 </navigation>
